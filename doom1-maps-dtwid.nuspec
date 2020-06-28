@@ -12,7 +12,7 @@
     <!-- version should MATCH as closely as possible with the underlying software -->
     <!-- Is the version a prerelease of a version? https://docs.nuget.org/create/versioning#creating-prerelease-packages -->
     <!-- Note that unstable versions like 0.0.1 can be considered a released version, but it's possible that one can release a 0.0.1-beta before you release a 0.0.1 version. If the version number is final, that is considered a released version and not a prerelease. -->
-    <version>1.1.0</version>
+    <version>1.1.0.20200628</version>
     <!-- <packageSourceUrl>Where is this Chocolatey package located (think GitHub)? packageSourceUrl is highly recommended for the community feed</packageSourceUrl>-->
     <!-- owners is a poor name for maintainers of the package. It sticks around by this name for compatibility reasons. It basically means you. -->
     <owners>n3rd4i</owners>
@@ -20,7 +20,7 @@
 
     <!-- == SOFTWARE SPECIFIC SECTION == -->
     <!-- This section is about the software itself -->
-    <title>Doom the Way id Did (megawad)</title>
+    <title>Doom the Way id Did (Doom1 Megawad)</title>
     <authors>Sandy Petersen, John Romero, Tom Hall</authors>
     <!-- projectUrl is required for the community feed -->
     <projectUrl>https://doomwiki.org/wiki/Doom_the_Way_id_Did</projectUrl>
@@ -53,6 +53,11 @@
      </description>
     <!-- <releaseNotes>__REPLACE_OR_REMOVE__MarkDown_Okay</releaseNotes> -->
     <!-- =============================== -->
+
+    <dependencies>
+      <dependency id="freedoom" version="0.12.1"/>
+    </dependencies>
+
   </metadata>
   <files>
     <file src="tools\**" target="tools" />
